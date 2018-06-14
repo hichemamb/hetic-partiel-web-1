@@ -1307,6 +1307,8 @@
 		}
 		#pageintro .heading {
 			font-size: 2rem;
+			margin-right:auto;
+			margin-left:auto;
 		}
 		.sectiontitle {
 			max-width: none;
