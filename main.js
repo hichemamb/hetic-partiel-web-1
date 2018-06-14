@@ -22,6 +22,16 @@ key.burgerExit.addEventListener('click',function(){
 })
 }
 
+document.addEventListener("scroll", function(){
+   var getScrollTop = document.documentElement.scrollTop;
+   if (getScrollTop > 100){
+     key.mainNav.style.display='block';
+   } else{
+     key.mainNav.style.position='fixed';
+   }
+});
+
+
 window.addEventListener('load',function(){
   showMenu();
 })
