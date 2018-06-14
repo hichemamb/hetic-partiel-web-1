@@ -4,6 +4,31 @@
 @import url("font-awesome.min.css");
 @import url("framework.css");
 
+/* keyframes */
+@keyframes fadeIn {
+  0% {
+  opacity: 0;
+  -webkit-transform: translate3d(0, -100%, 0);
+  transform: translate3d(0, -100%, 0);
+  }
+  100% {
+  opacity: 1;
+  -webkit-transform: none;
+  transform: none;
+  }
+}
+
+@keyframes fadeOut {
+  0% {
+  opacity: 1;
+  }
+  100% {
+  opacity: 0;
+  -webkit-transform: translate3d(0, -100%, 0);
+  transform: translate3d(0, -100%, 0);
+  }
+}
+
 /* Top Bar --------------------------------------------------------------------------------------------------------------- */
 
 #topbar {
@@ -1294,6 +1319,60 @@ table a,
 	.cta> :first-child {
 		margin-top: 0;
 	}
+	.burgerIcon{
+		width:40px;
+		height:40px;
+		margin-right:auto;
+		margin-left:auto;
+	}
+	.barOne{
+		background:red;
+		width:30px;
+		height:3px;
+		margin-bottom:5px;
+	}
+	.barTwo{
+		background:red;
+		width:30px;
+		height:3px;
+		margin-bottom:5px;
+	}
+	.barThree{
+		background:red;
+		width:30px;
+		height:3px;
+		margin-bottom:5px;
+	}
+	.burgerExit{
+		width:40px;
+		height:40px;
+		margin-right:auto;
+		margin-left:auto;
+		display:none;
+	}
+	.barOneBis{
+		background:red;
+		width:30px;
+		height:3px;
+		transform: rotate(45deg);
+	}
+	.barTwoBis{
+		background:red;
+		width:30px;
+		height:3px;
+		transform: rotate(-45deg);
+	}
+	#mainav {
+		background:#EFEFEF;
+		height:50vh;
+		display:none;
+	}
+	#mainav ul {
+		display: block;
+	}
+	#mainav form {
+		display: block;
+	}
 }
 
 
@@ -1327,4 +1406,3 @@ table a,
 		font-size: 1.6rem;
 	}
 }
-

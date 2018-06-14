@@ -1,0 +1,27 @@
+var key = {
+  burgerIcon : document.querySelector('.burgerIcon'),
+  burgerExit : document.querySelector('.burgerExit'),
+  mainNav : document.querySelector('#mainav'),
+}
+
+function showMenu(){
+key.burgerIcon.addEventListener('click',function(){
+  key.mainNav.style.display='block';
+  key.mainNav.style.animationName='fadeIn';
+  key.mainNav.style.animationDuration='2s';
+  key.burgerIcon.style.display='none';
+  key.burgerExit.style.display='block';
+})
+
+key.burgerExit.addEventListener('click',function(){
+  setTimeout(function(){key.mainNav.style.display='none';},2000);
+  key.mainNav.style.animationName='fadeOut';
+  key.mainNav.style.animationDuration='2s';
+  key.burgerIcon.style.display='block';
+  key.burgerExit.style.display='none';
+})
+}
+
+window.addEventListener('load',function(){
+  showMenu();
+})
